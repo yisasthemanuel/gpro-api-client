@@ -23,8 +23,8 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.jlobato.gpro.model.DriverProfileResponseOffersFromInner;
 import org.jlobato.gpro.model.DriverProfileResponseOwner;
-import org.jlobato.gpro.model.TDProfileResponseOffersFromInner;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 
@@ -299,7 +299,7 @@ public class TDProfileResponse {
 
   public static final String JSON_PROPERTY_OFFERS_FROM = "offersFrom";
   @jakarta.annotation.Nullable
-  private List<TDProfileResponseOffersFromInner> offersFrom = new ArrayList<>();
+  private List<DriverProfileResponseOffersFromInner> offersFrom = new ArrayList<>();
 
   public static final String JSON_PROPERTY_API_REQUESTS_REMAINING = "apiRequestsRemaining";
   @jakarta.annotation.Nullable
@@ -1608,13 +1608,13 @@ public class TDProfileResponse {
     this.totalOffers = totalOffers;
   }
 
-  public TDProfileResponse offersFrom(@jakarta.annotation.Nullable List<TDProfileResponseOffersFromInner> offersFrom) {
+  public TDProfileResponse offersFrom(@jakarta.annotation.Nullable List<DriverProfileResponseOffersFromInner> offersFrom) {
     
     this.offersFrom = offersFrom;
     return this;
   }
 
-  public TDProfileResponse addOffersFromItem(TDProfileResponseOffersFromInner offersFromItem) {
+  public TDProfileResponse addOffersFromItem(DriverProfileResponseOffersFromInner offersFromItem) {
     if (this.offersFrom == null) {
       this.offersFrom = new ArrayList<>();
     }
@@ -1630,14 +1630,14 @@ public class TDProfileResponse {
   @JsonProperty(JSON_PROPERTY_OFFERS_FROM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public List<TDProfileResponseOffersFromInner> getOffersFrom() {
+  public List<DriverProfileResponseOffersFromInner> getOffersFrom() {
     return offersFrom;
   }
 
 
   @JsonProperty(JSON_PROPERTY_OFFERS_FROM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setOffersFrom(@jakarta.annotation.Nullable List<TDProfileResponseOffersFromInner> offersFrom) {
+  public void setOffersFrom(@jakarta.annotation.Nullable List<DriverProfileResponseOffersFromInner> offersFrom) {
     this.offersFrom = offersFrom;
   }
 

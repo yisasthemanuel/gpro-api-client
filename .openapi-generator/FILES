@@ -36,6 +36,7 @@ docs/DriverProfileResponseFaceJSONHead.md
 docs/DriverProfileResponseFaceJSONMouth.md
 docs/DriverProfileResponseFaceJSONNose.md
 docs/DriverProfileResponseFavTrack1.md
+docs/DriverProfileResponseOffersFromInner.md
 docs/DriverProfileResponseOwner.md
 docs/DriverProfileResponsePrevWorkInner.md
 docs/EconomyHistoryESGraphResponse.md
@@ -235,7 +236,6 @@ docs/StartingGridResponse.md
 docs/StartingGridResponseManagersSGInner.md
 docs/SummaryGroups.md
 docs/TDProfileResponse.md
-docs/TDProfileResponseOffersFromInner.md
 docs/Table.md
 docs/TestingResponse.md
 docs/TestingResponseStintsDoneInner.md
@@ -310,6 +310,7 @@ src/main/java/org/jlobato/gpro/model/DriverProfileResponseFaceJSONHead.java
 src/main/java/org/jlobato/gpro/model/DriverProfileResponseFaceJSONMouth.java
 src/main/java/org/jlobato/gpro/model/DriverProfileResponseFaceJSONNose.java
 src/main/java/org/jlobato/gpro/model/DriverProfileResponseFavTrack1.java
+src/main/java/org/jlobato/gpro/model/DriverProfileResponseOffersFromInner.java
 src/main/java/org/jlobato/gpro/model/DriverProfileResponseOwner.java
 src/main/java/org/jlobato/gpro/model/DriverProfileResponsePrevWorkInner.java
 src/main/java/org/jlobato/gpro/model/EconomyHistoryESGraphResponse.java
@@ -502,7 +503,6 @@ src/main/java/org/jlobato/gpro/model/StartingGridResponse.java
 src/main/java/org/jlobato/gpro/model/StartingGridResponseManagersSGInner.java
 src/main/java/org/jlobato/gpro/model/SummaryGroups.java
 src/main/java/org/jlobato/gpro/model/TDProfileResponse.java
-src/main/java/org/jlobato/gpro/model/TDProfileResponseOffersFromInner.java
 src/main/java/org/jlobato/gpro/model/Table.java
 src/main/java/org/jlobato/gpro/model/TestingResponse.java
 src/main/java/org/jlobato/gpro/model/TestingResponseStintsDoneInner.java
@@ -521,3 +521,4 @@ src/main/java/org/jlobato/gpro/model/TyreSuppliersResponseSuppliersInner.java
 src/main/java/org/jlobato/gpro/model/ViewStaffResponse.java
 src/main/java/org/jlobato/gpro/model/ViewStaffResponseManagersInner.java
 src/main/java/org/jlobato/gpro/model/WeiRange.java
+src/test/java/org/jlobato/gpro/model/DriverProfileResponseOffersFromInnerTest.java

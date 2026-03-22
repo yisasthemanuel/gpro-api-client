@@ -6770,7 +6770,7 @@ components:
           type: integer
         offersFrom:
           items:
-            type: integer
+            $ref: "#/components/schemas/DriverProfileResponse_offersFrom_inner"
           type: array
       type: object
     NoDriverProfileResponse:
@@ -11097,7 +11097,7 @@ components:
           type: integer
         offersFrom:
           items:
-            $ref: "#/components/schemas/TDProfileResponse_offersFrom_inner"
+            $ref: "#/components/schemas/DriverProfileResponse_offersFrom_inner"
           type: array
         apiRequestsRemaining:
           type: integer
@@ -113734,6 +113734,19 @@ components:
         group:
           type: string
       type: object
+    DriverProfileResponse_offersFrom_inner:
+      properties:
+        manName:
+          type: string
+        manChamps:
+          type: string
+        manIDM:
+          type: string
+        manGroup:
+          type: string
+        manGroupLong:
+          type: string
+      type: object
     CalendarResponse_events_inner_winner:
       properties:
         IDM:
@@ -114015,19 +114028,6 @@ components:
           type: integer
         inShortlist:
           type: integer
-      type: object
-    TDProfileResponse_offersFrom_inner:
-      properties:
-        manName:
-          type: string
-        manChamps:
-          type: string
-        manIDM:
-          type: string
-        manGroup:
-          type: string
-        manGroupLong:
-          type: string
       type: object
     SnFResponse_availTrainings_inner:
       properties:

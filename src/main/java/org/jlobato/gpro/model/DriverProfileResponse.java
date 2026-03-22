@@ -26,6 +26,7 @@ import java.util.Arrays;
 import java.util.List;
 import org.jlobato.gpro.model.DriverProfileResponseFaceJSON;
 import org.jlobato.gpro.model.DriverProfileResponseFavTrack1;
+import org.jlobato.gpro.model.DriverProfileResponseOffersFromInner;
 import org.jlobato.gpro.model.DriverProfileResponseOwner;
 import org.jlobato.gpro.model.DriverProfileResponsePrevWorkInner;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -511,7 +512,7 @@ public class DriverProfileResponse {
 
   public static final String JSON_PROPERTY_OFFERS_FROM = "offersFrom";
   @jakarta.annotation.Nullable
-  private List<Integer> offersFrom = new ArrayList<>();
+  private List<DriverProfileResponseOffersFromInner> offersFrom = new ArrayList<>();
 
   public DriverProfileResponse() {
   }
@@ -2874,13 +2875,13 @@ public class DriverProfileResponse {
     this.totalOffers = totalOffers;
   }
 
-  public DriverProfileResponse offersFrom(@jakarta.annotation.Nullable List<Integer> offersFrom) {
+  public DriverProfileResponse offersFrom(@jakarta.annotation.Nullable List<DriverProfileResponseOffersFromInner> offersFrom) {
     
     this.offersFrom = offersFrom;
     return this;
   }
 
-  public DriverProfileResponse addOffersFromItem(Integer offersFromItem) {
+  public DriverProfileResponse addOffersFromItem(DriverProfileResponseOffersFromInner offersFromItem) {
     if (this.offersFrom == null) {
       this.offersFrom = new ArrayList<>();
     }
@@ -2896,14 +2897,14 @@ public class DriverProfileResponse {
   @JsonProperty(JSON_PROPERTY_OFFERS_FROM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public List<Integer> getOffersFrom() {
+  public List<DriverProfileResponseOffersFromInner> getOffersFrom() {
     return offersFrom;
   }
 
 
   @JsonProperty(JSON_PROPERTY_OFFERS_FROM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setOffersFrom(@jakarta.annotation.Nullable List<Integer> offersFrom) {
+  public void setOffersFrom(@jakarta.annotation.Nullable List<DriverProfileResponseOffersFromInner> offersFrom) {
     this.offersFrom = offersFrom;
   }
 

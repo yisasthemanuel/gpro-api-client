@@ -101,7 +101,7 @@
 |**errorMsgExtendColor** | **String** |  |  [optional] |
 |**setContractLengthExtend** | **String** |  |  [optional] |
 |**totalOffers** | **Integer** |  |  [optional] |
-|**offersFrom** | **List&lt;Integer&gt;** |  |  [optional] |
+|**offersFrom** | [**List&lt;DriverProfileResponseOffersFromInner&gt;**](DriverProfileResponseOffersFromInner.md) |  |  [optional] |
 
 
 

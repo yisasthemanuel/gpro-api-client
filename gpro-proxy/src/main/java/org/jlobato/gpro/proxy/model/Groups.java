@@ -1,0 +1,572 @@
+package org.jlobato.gpro.proxy.model;
+
+import java.net.URI;
+import java.util.Objects;
+import com.fasterxml.jackson.annotation.JsonValue;
+import java.time.OffsetDateTime;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.*;
+
+
+import java.util.*;
+import jakarta.annotation.Generated;
+
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonValue;
+
+/**
+ * Gets or Sets Groups
+ */
+
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.14.0")
+public enum Groups {
+  
+  ELITE("Elite"),
+  
+  MASTER_1("Master - 1"),
+  
+  MASTER_2("Master - 2"),
+  
+  MASTER_3("Master - 3"),
+  
+  MASTER_4("Master - 4"),
+  
+  MASTER_5("Master - 5"),
+  
+  PRO_1("Pro - 1"),
+  
+  PRO_2("Pro - 2"),
+  
+  PRO_3("Pro - 3"),
+  
+  PRO_4("Pro - 4"),
+  
+  PRO_5("Pro - 5"),
+  
+  PRO_6("Pro - 6"),
+  
+  PRO_7("Pro - 7"),
+  
+  PRO_8("Pro - 8"),
+  
+  PRO_9("Pro - 9"),
+  
+  PRO_10("Pro - 10"),
+  
+  PRO_11("Pro - 11"),
+  
+  PRO_12("Pro - 12"),
+  
+  PRO_13("Pro - 13"),
+  
+  PRO_14("Pro - 14"),
+  
+  PRO_15("Pro - 15"),
+  
+  PRO_16("Pro - 16"),
+  
+  PRO_17("Pro - 17"),
+  
+  PRO_18("Pro - 18"),
+  
+  PRO_19("Pro - 19"),
+  
+  PRO_20("Pro - 20"),
+  
+  PRO_21("Pro - 21"),
+  
+  PRO_22("Pro - 22"),
+  
+  PRO_23("Pro - 23"),
+  
+  PRO_24("Pro - 24"),
+  
+  PRO_25("Pro - 25"),
+  
+  AMATEUR_1("Amateur - 1"),
+  
+  AMATEUR_2("Amateur - 2"),
+  
+  AMATEUR_3("Amateur - 3"),
+  
+  AMATEUR_4("Amateur - 4"),
+  
+  AMATEUR_5("Amateur - 5"),
+  
+  AMATEUR_6("Amateur - 6"),
+  
+  AMATEUR_7("Amateur - 7"),
+  
+  AMATEUR_8("Amateur - 8"),
+  
+  AMATEUR_9("Amateur - 9"),
+  
+  AMATEUR_10("Amateur - 10"),
+  
+  AMATEUR_11("Amateur - 11"),
+  
+  AMATEUR_12("Amateur - 12"),
+  
+  AMATEUR_13("Amateur - 13"),
+  
+  AMATEUR_14("Amateur - 14"),
+  
+  AMATEUR_15("Amateur - 15"),
+  
+  AMATEUR_16("Amateur - 16"),
+  
+  AMATEUR_17("Amateur - 17"),
+  
+  AMATEUR_18("Amateur - 18"),
+  
+  AMATEUR_19("Amateur - 19"),
+  
+  AMATEUR_20("Amateur - 20"),
+  
+  AMATEUR_21("Amateur - 21"),
+  
+  AMATEUR_22("Amateur - 22"),
+  
+  AMATEUR_23("Amateur - 23"),
+  
+  AMATEUR_24("Amateur - 24"),
+  
+  AMATEUR_25("Amateur - 25"),
+  
+  AMATEUR_26("Amateur - 26"),
+  
+  AMATEUR_27("Amateur - 27"),
+  
+  AMATEUR_28("Amateur - 28"),
+  
+  AMATEUR_29("Amateur - 29"),
+  
+  AMATEUR_30("Amateur - 30"),
+  
+  AMATEUR_31("Amateur - 31"),
+  
+  AMATEUR_32("Amateur - 32"),
+  
+  AMATEUR_33("Amateur - 33"),
+  
+  AMATEUR_34("Amateur - 34"),
+  
+  AMATEUR_35("Amateur - 35"),
+  
+  AMATEUR_36("Amateur - 36"),
+  
+  AMATEUR_37("Amateur - 37"),
+  
+  AMATEUR_38("Amateur - 38"),
+  
+  AMATEUR_39("Amateur - 39"),
+  
+  AMATEUR_40("Amateur - 40"),
+  
+  AMATEUR_41("Amateur - 41"),
+  
+  AMATEUR_42("Amateur - 42"),
+  
+  AMATEUR_43("Amateur - 43"),
+  
+  AMATEUR_44("Amateur - 44"),
+  
+  AMATEUR_45("Amateur - 45"),
+  
+  AMATEUR_46("Amateur - 46"),
+  
+  AMATEUR_47("Amateur - 47"),
+  
+  AMATEUR_48("Amateur - 48"),
+  
+  AMATEUR_49("Amateur - 49"),
+  
+  AMATEUR_50("Amateur - 50"),
+  
+  AMATEUR_51("Amateur - 51"),
+  
+  AMATEUR_52("Amateur - 52"),
+  
+  AMATEUR_53("Amateur - 53"),
+  
+  AMATEUR_54("Amateur - 54"),
+  
+  AMATEUR_55("Amateur - 55"),
+  
+  AMATEUR_56("Amateur - 56"),
+  
+  AMATEUR_57("Amateur - 57"),
+  
+  AMATEUR_58("Amateur - 58"),
+  
+  AMATEUR_59("Amateur - 59"),
+  
+  AMATEUR_60("Amateur - 60"),
+  
+  AMATEUR_61("Amateur - 61"),
+  
+  AMATEUR_62("Amateur - 62"),
+  
+  AMATEUR_63("Amateur - 63"),
+  
+  AMATEUR_64("Amateur - 64"),
+  
+  AMATEUR_65("Amateur - 65"),
+  
+  AMATEUR_66("Amateur - 66"),
+  
+  AMATEUR_67("Amateur - 67"),
+  
+  AMATEUR_68("Amateur - 68"),
+  
+  AMATEUR_69("Amateur - 69"),
+  
+  AMATEUR_70("Amateur - 70"),
+  
+  AMATEUR_71("Amateur - 71"),
+  
+  AMATEUR_72("Amateur - 72"),
+  
+  AMATEUR_73("Amateur - 73"),
+  
+  AMATEUR_74("Amateur - 74"),
+  
+  AMATEUR_75("Amateur - 75"),
+  
+  AMATEUR_76("Amateur - 76"),
+  
+  AMATEUR_77("Amateur - 77"),
+  
+  AMATEUR_78("Amateur - 78"),
+  
+  AMATEUR_79("Amateur - 79"),
+  
+  AMATEUR_80("Amateur - 80"),
+  
+  ROOKIE_1("Rookie - 1"),
+  
+  ROOKIE_2("Rookie - 2"),
+  
+  ROOKIE_3("Rookie - 3"),
+  
+  ROOKIE_4("Rookie - 4"),
+  
+  ROOKIE_5("Rookie - 5"),
+  
+  ROOKIE_6("Rookie - 6"),
+  
+  ROOKIE_7("Rookie - 7"),
+  
+  ROOKIE_8("Rookie - 8"),
+  
+  ROOKIE_9("Rookie - 9"),
+  
+  ROOKIE_10("Rookie - 10"),
+  
+  ROOKIE_11("Rookie - 11"),
+  
+  ROOKIE_12("Rookie - 12"),
+  
+  ROOKIE_13("Rookie - 13"),
+  
+  ROOKIE_14("Rookie - 14"),
+  
+  ROOKIE_15("Rookie - 15"),
+  
+  ROOKIE_16("Rookie - 16"),
+  
+  ROOKIE_17("Rookie - 17"),
+  
+  ROOKIE_18("Rookie - 18"),
+  
+  ROOKIE_19("Rookie - 19"),
+  
+  ROOKIE_20("Rookie - 20"),
+  
+  ROOKIE_21("Rookie - 21"),
+  
+  ROOKIE_22("Rookie - 22"),
+  
+  ROOKIE_23("Rookie - 23"),
+  
+  ROOKIE_24("Rookie - 24"),
+  
+  ROOKIE_25("Rookie - 25"),
+  
+  ROOKIE_26("Rookie - 26"),
+  
+  ROOKIE_27("Rookie - 27"),
+  
+  ROOKIE_28("Rookie - 28"),
+  
+  ROOKIE_29("Rookie - 29"),
+  
+  ROOKIE_30("Rookie - 30"),
+  
+  ROOKIE_31("Rookie - 31"),
+  
+  ROOKIE_32("Rookie - 32"),
+  
+  ROOKIE_33("Rookie - 33"),
+  
+  ROOKIE_34("Rookie - 34"),
+  
+  ROOKIE_35("Rookie - 35"),
+  
+  ROOKIE_36("Rookie - 36"),
+  
+  ROOKIE_37("Rookie - 37"),
+  
+  ROOKIE_38("Rookie - 38"),
+  
+  ROOKIE_39("Rookie - 39"),
+  
+  ROOKIE_40("Rookie - 40"),
+  
+  ROOKIE_41("Rookie - 41"),
+  
+  ROOKIE_42("Rookie - 42"),
+  
+  ROOKIE_43("Rookie - 43"),
+  
+  ROOKIE_44("Rookie - 44"),
+  
+  ROOKIE_45("Rookie - 45"),
+  
+  ROOKIE_46("Rookie - 46"),
+  
+  ROOKIE_47("Rookie - 47"),
+  
+  ROOKIE_48("Rookie - 48"),
+  
+  ROOKIE_49("Rookie - 49"),
+  
+  ROOKIE_50("Rookie - 50"),
+  
+  ROOKIE_51("Rookie - 51"),
+  
+  ROOKIE_52("Rookie - 52"),
+  
+  ROOKIE_53("Rookie - 53"),
+  
+  ROOKIE_54("Rookie - 54"),
+  
+  ROOKIE_55("Rookie - 55"),
+  
+  ROOKIE_56("Rookie - 56"),
+  
+  ROOKIE_57("Rookie - 57"),
+  
+  ROOKIE_58("Rookie - 58"),
+  
+  ROOKIE_59("Rookie - 59"),
+  
+  ROOKIE_60("Rookie - 60"),
+  
+  ROOKIE_61("Rookie - 61"),
+  
+  ROOKIE_62("Rookie - 62"),
+  
+  ROOKIE_63("Rookie - 63"),
+  
+  ROOKIE_64("Rookie - 64"),
+  
+  ROOKIE_65("Rookie - 65"),
+  
+  ROOKIE_66("Rookie - 66"),
+  
+  ROOKIE_67("Rookie - 67"),
+  
+  ROOKIE_68("Rookie - 68"),
+  
+  ROOKIE_69("Rookie - 69"),
+  
+  ROOKIE_70("Rookie - 70"),
+  
+  ROOKIE_71("Rookie - 71"),
+  
+  ROOKIE_72("Rookie - 72"),
+  
+  ROOKIE_73("Rookie - 73"),
+  
+  ROOKIE_74("Rookie - 74"),
+  
+  ROOKIE_75("Rookie - 75"),
+  
+  ROOKIE_76("Rookie - 76"),
+  
+  ROOKIE_77("Rookie - 77"),
+  
+  ROOKIE_78("Rookie - 78"),
+  
+  ROOKIE_79("Rookie - 79"),
+  
+  ROOKIE_80("Rookie - 80"),
+  
+  ROOKIE_81("Rookie - 81"),
+  
+  ROOKIE_82("Rookie - 82"),
+  
+  ROOKIE_83("Rookie - 83"),
+  
+  ROOKIE_84("Rookie - 84"),
+  
+  ROOKIE_85("Rookie - 85"),
+  
+  ROOKIE_86("Rookie - 86"),
+  
+  ROOKIE_87("Rookie - 87"),
+  
+  ROOKIE_88("Rookie - 88"),
+  
+  ROOKIE_89("Rookie - 89"),
+  
+  ROOKIE_90("Rookie - 90"),
+  
+  ROOKIE_91("Rookie - 91"),
+  
+  ROOKIE_92("Rookie - 92"),
+  
+  ROOKIE_93("Rookie - 93"),
+  
+  ROOKIE_94("Rookie - 94"),
+  
+  ROOKIE_95("Rookie - 95"),
+  
+  ROOKIE_96("Rookie - 96"),
+  
+  ROOKIE_97("Rookie - 97"),
+  
+  ROOKIE_98("Rookie - 98"),
+  
+  ROOKIE_99("Rookie - 99"),
+  
+  ROOKIE_100("Rookie - 100"),
+  
+  ROOKIE_101("Rookie - 101"),
+  
+  ROOKIE_102("Rookie - 102"),
+  
+  ROOKIE_103("Rookie - 103"),
+  
+  ROOKIE_104("Rookie - 104"),
+  
+  ROOKIE_105("Rookie - 105"),
+  
+  ROOKIE_106("Rookie - 106"),
+  
+  ROOKIE_107("Rookie - 107"),
+  
+  ROOKIE_108("Rookie - 108"),
+  
+  ROOKIE_109("Rookie - 109"),
+  
+  ROOKIE_110("Rookie - 110"),
+  
+  ROOKIE_111("Rookie - 111"),
+  
+  ROOKIE_112("Rookie - 112"),
+  
+  ROOKIE_113("Rookie - 113"),
+  
+  ROOKIE_114("Rookie - 114"),
+  
+  ROOKIE_115("Rookie - 115"),
+  
+  ROOKIE_116("Rookie - 116"),
+  
+  ROOKIE_117("Rookie - 117"),
+  
+  ROOKIE_118("Rookie - 118"),
+  
+  ROOKIE_119("Rookie - 119"),
+  
+  ROOKIE_120("Rookie - 120"),
+  
+  ROOKIE_121("Rookie - 121"),
+  
+  ROOKIE_122("Rookie - 122"),
+  
+  ROOKIE_123("Rookie - 123"),
+  
+  ROOKIE_124("Rookie - 124"),
+  
+  ROOKIE_125("Rookie - 125"),
+  
+  ROOKIE_126("Rookie - 126"),
+  
+  ROOKIE_127("Rookie - 127"),
+  
+  ROOKIE_128("Rookie - 128"),
+  
+  ROOKIE_129("Rookie - 129"),
+  
+  ROOKIE_130("Rookie - 130"),
+  
+  ROOKIE_131("Rookie - 131"),
+  
+  ROOKIE_132("Rookie - 132"),
+  
+  ROOKIE_133("Rookie - 133"),
+  
+  ROOKIE_134("Rookie - 134"),
+  
+  ROOKIE_135("Rookie - 135"),
+  
+  ROOKIE_136("Rookie - 136"),
+  
+  ROOKIE_137("Rookie - 137"),
+  
+  ROOKIE_138("Rookie - 138"),
+  
+  ROOKIE_139("Rookie - 139"),
+  
+  ROOKIE_140("Rookie - 140"),
+  
+  ROOKIE_141("Rookie - 141"),
+  
+  ROOKIE_142("Rookie - 142"),
+  
+  ROOKIE_143("Rookie - 143"),
+  
+  ROOKIE_144("Rookie - 144"),
+  
+  ROOKIE_145("Rookie - 145"),
+  
+  ROOKIE_146("Rookie - 146"),
+  
+  ROOKIE_147("Rookie - 147"),
+  
+  ROOKIE_148("Rookie - 148"),
+  
+  ROOKIE_149("Rookie - 149"),
+  
+  ROOKIE_150("Rookie - 150");
+
+  private final String value;
+
+  Groups(String value) {
+    this.value = value;
+  }
+
+  @JsonValue
+  public String getValue() {
+    return value;
+  }
+
+  @Override
+  public String toString() {
+    return String.valueOf(value);
+  }
+
+  @JsonCreator
+  public static Groups fromValue(String value) {
+    for (Groups b : Groups.values()) {
+      if (b.value.equals(value)) {
+        return b;
+      }
+    }
+    throw new IllegalArgumentException("Unexpected value '" + value + "'");
+  }
+}
+

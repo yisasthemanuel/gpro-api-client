@@ -59,7 +59,7 @@
 |**offerPlaced** | **Integer** |  |  [optional] |
 |**inShortList** | **Integer** |  |  [optional] |
 |**totalOffers** | **Integer** |  |  [optional] |
-|**offersFrom** | [**List&lt;TDProfileResponseOffersFromInner&gt;**](TDProfileResponseOffersFromInner.md) |  |  [optional] |
+|**offersFrom** | [**List&lt;DriverProfileResponseOffersFromInner&gt;**](DriverProfileResponseOffersFromInner.md) |  |  [optional] |
 |**apiRequestsRemaining** | **Integer** |  |  [optional] |
 
 

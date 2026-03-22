@@ -27,6 +27,7 @@ import java.util.List;
 import org.jlobato.gpro.model.DriverProfileResponse;
 import org.jlobato.gpro.model.DriverProfileResponseFaceJSON;
 import org.jlobato.gpro.model.DriverProfileResponseFavTrack1;
+import org.jlobato.gpro.model.DriverProfileResponseOffersFromInner;
 import org.jlobato.gpro.model.DriverProfileResponseOwner;
 import org.jlobato.gpro.model.DriverProfileResponsePrevWorkInner;
 import org.jlobato.gpro.model.NoDriverProfileResponse;
@@ -514,7 +515,7 @@ public class GetDriverProfile200Response {
 
   public static final String JSON_PROPERTY_OFFERS_FROM = "offersFrom";
   @jakarta.annotation.Nullable
-  private List<Integer> offersFrom = new ArrayList<>();
+  private List<DriverProfileResponseOffersFromInner> offersFrom = new ArrayList<>();
 
   public GetDriverProfile200Response() {
   }
@@ -2877,13 +2878,13 @@ public class GetDriverProfile200Response {
     this.totalOffers = totalOffers;
   }
 
-  public GetDriverProfile200Response offersFrom(@jakarta.annotation.Nullable List<Integer> offersFrom) {
+  public GetDriverProfile200Response offersFrom(@jakarta.annotation.Nullable List<DriverProfileResponseOffersFromInner> offersFrom) {
     
     this.offersFrom = offersFrom;
     return this;
   }
 
-  public GetDriverProfile200Response addOffersFromItem(Integer offersFromItem) {
+  public GetDriverProfile200Response addOffersFromItem(DriverProfileResponseOffersFromInner offersFromItem) {
     if (this.offersFrom == null) {
       this.offersFrom = new ArrayList<>();
     }
@@ -2899,14 +2900,14 @@ public class GetDriverProfile200Response {
   @JsonProperty(JSON_PROPERTY_OFFERS_FROM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public List<Integer> getOffersFrom() {
+  public List<DriverProfileResponseOffersFromInner> getOffersFrom() {
     return offersFrom;
   }
 
 
   @JsonProperty(JSON_PROPERTY_OFFERS_FROM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setOffersFrom(@jakarta.annotation.Nullable List<Integer> offersFrom) {
+  public void setOffersFrom(@jakarta.annotation.Nullable List<DriverProfileResponseOffersFromInner> offersFrom) {
     this.offersFrom = offersFrom;
   }
 

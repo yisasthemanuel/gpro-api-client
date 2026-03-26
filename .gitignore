@@ -24,3 +24,10 @@ build.sbt
 .github/workflows/maven.yml
 .openapi-generator/FILES
 .openapi-generator/VERSION
+gpro-client/.openapi-generator/VERSION
+gpro-client/.github/workflows/maven.yml
+gpro-client/gradlew
+gpro-client/gradlew.bat
+gpro-client/gradle.properties
+gpro-client/build.gradle
+gpro-client/.travis.yml
